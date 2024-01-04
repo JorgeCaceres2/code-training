@@ -1,0 +1,38 @@
+diff list and Set
+
+fruit = "strawberries"
+fruit.substring(2, 5)
+raw
+
+1: class Main {
+2:   public static void main (String[] args) {
+3:     int array[] = {1, 2, 3, 4};
+4:     for (int i = 0; i < array.size(); i++) {
+5:        System.out.print(array[i]);
+6:     }
+7:   }
+8: }
+
+String str = "abcde";
+str.trim();
+str.toUpperCase();
+str.substring(3, 4);
+System.out.println(str);
+
+1: class Main {
+2:  public static void main (String[] args) {
+3:        List list = new ArrayList();
+4:        list.add("hello");
+5:        list.add(2);
+6:        System.out.print(list.get(0) instanceof Object);
+7:        System.out.print(list.get(1) instanceof Integer);
+8:     }
+9:  }
+Tú
+10:30
+
+ArrayList<Pencil>pencilCase write how to iterate
+for (Pencil p : pensilCase) {}
+
+boolean isDivisibleBy5 = ________________;
+number % 5 == 0

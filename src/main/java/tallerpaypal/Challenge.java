@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Challenge {
 
-    static void splitString(String str, int parts) {
+    static void splitString3(String str, int parts) {
       if (str == null || str.isEmpty() || parts <= 0) {
         System.out.println("Error in given parameters, returning a empty list");
         System.out.println(Collections.emptyList());
@@ -33,6 +33,30 @@ public class Challenge {
 
       Arrays.stream(resultArray).forEach(System.out::println);
     }
+
+  static void splitString(String str, int parts) {
+
+
+      if (str == null || str.isEmpty()) {
+        System.out.println("Invalid string");
+      } else {
+        int quantity = str.length() / parts;
+        int currentIdx = 0;
+        for (int i = 0; i < parts; i++) {
+          if (str.length() - currentIdx >= quantity) {
+            System.out.println(str.substring(currentIdx, currentIdx + quantity));
+            currentIdx = currentIdx + quantity;
+          } else {
+            System.out.println(str.substring(currentIdx));
+          }
+        }
+      }
+  }
+
+
+
+
+
 
     public static void main(String[] args) {
       String str = "abcdefghijklmnopqrstuvwxy"; //length 25
